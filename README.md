@@ -28,6 +28,9 @@ pod 'VBPiledView', :git => 'https://github.com/v-braun/VBPiledView.git'
 ```
 
 ## Usage
+See the *Example* Project.
+
+Here is a sample ViewController that use the VBPiledView:
 
 ```swift
 import VBPiledView
