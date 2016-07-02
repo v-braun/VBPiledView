@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VBPiledView"
-  s.version      = "1.0.0"
+  s.version      = "1.0"
   s.summary      = "Simple and beautiful stacked UIView to use as a replacement for an UITableView, UIImageView or as a menu."
 
   s.description  = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/v-braun/VBPiledView"
-  s.screenshots  = "http://a4.files.theultralinx.com/image/upload/MTMzNjc1NDE5MTIyNTQzMjM1.gif"
+  s.screenshots  = "https://github.com/v-braun/VBPiledView/blob/master/screen.gif"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "Viktor Braun (v_b)" => "v-braun@live.de" }
