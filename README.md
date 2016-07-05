@@ -16,6 +16,7 @@ Inspired by [this](http://theultralinx.com/2015/10/inspirational-ui-design-15/) 
 
 ## Installation
 
+### CocoaPods
 VBPiledView is available on [CocoaPods](http://cocoapods.org). Just add the following to your project Podfile:
 
 ```ruby
@@ -27,6 +28,10 @@ Or from GitHub:
 ```ruby
 pod 'VBPiledView', :git => 'https://github.com/v-braun/VBPiledView.git'
 ```
+
+### Manually
+1. Download and drop ```VBPiledView.swift``` in your project.  
+2. Congratulations!  
 
 ## Usage
 See the *Example* Project.
