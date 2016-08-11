@@ -1,12 +1,13 @@
 # VBPiledView
+> simple but highly effective animation and interactivity!
 
 By [v-braun - www.dev-things.net](http://www.dev-things.net).
 
-## Description
+## Preview
 ![image](screen.gif)
 
-Simple and beautiful stacked UIView to use as a replacement for an UITableView, UIImageView or as a menu.
-
+## Description
+Very simple and beautiful stacked UIView to use as a replacement for an UITableView, UIImageView or as a menu.
 
 Inspired by [this](http://theultralinx.com/2015/10/inspirational-ui-design-15/) post from [ULTRALINX](http://theultralinx.com/):
 
@@ -15,6 +16,7 @@ Inspired by [this](http://theultralinx.com/2015/10/inspirational-ui-design-15/) 
 
 ## Installation
 
+### CocoaPods
 VBPiledView is available on [CocoaPods](http://cocoapods.org). Just add the following to your project Podfile:
 
 ```ruby
@@ -26,6 +28,10 @@ Or from GitHub:
 ```ruby
 pod 'VBPiledView', :git => 'https://github.com/v-braun/VBPiledView.git'
 ```
+
+### Manually
+1. Download and drop ```VBPiledView.swift``` in your project.  
+2. Congratulations!  
 
 ## Usage
 See the *Example* Project.
