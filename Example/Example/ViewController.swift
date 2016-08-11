@@ -5,7 +5,6 @@
 //  Created by Viktor Braun on 02.07.16.
 //  Copyright © 2016 dev-things. All rights reserved.
 //
-
 import UIKit
 import VBPiledView
 class ViewController: UIViewController, VBPiledViewDataSource {

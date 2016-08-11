@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A6351761D5C5EDA004B1AE4 /* ImgWithTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6351751D5C5EDA004B1AE4 /* ImgWithTextViewController.swift */; };
 		2A80926C1D285F760007B5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80926B1D285F760007B5D2 /* AppDelegate.swift */; };
 		2A80926E1D285F760007B5D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80926D1D285F760007B5D2 /* ViewController.swift */; };
 		2A8092711D285F760007B5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A80926F1D285F760007B5D2 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A6351751D5C5EDA004B1AE4 /* ImgWithTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgWithTextViewController.swift; sourceTree = "<group>"; };
 		2A8092681D285F760007B5D2 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A80926B1D285F760007B5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A80926D1D285F760007B5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				2A8092721D285F760007B5D2 /* Assets.xcassets */,
 				2A8092741D285F760007B5D2 /* LaunchScreen.storyboard */,
 				2A8092771D285F760007B5D2 /* Info.plist */,
+				2A6351751D5C5EDA004B1AE4 /* ImgWithTextViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				2A80926E1D285F760007B5D2 /* ViewController.swift in Sources */,
 				2A80926C1D285F760007B5D2 /* AppDelegate.swift in Sources */,
+				2A6351761D5C5EDA004B1AE4 /* ImgWithTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
