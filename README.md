@@ -75,6 +75,15 @@ class ViewController: UIViewController, VBPiledViewDataSource {
 }
 ```
 
+## Configuration
+The sizes of an expanded item and of all collapsed items can be configured relative to the size of the VBPiledView.
+
+```swift
+
+self.piledView.expandedContentHeightInPercent = 70 // expanded content height -> 70% of screen
+self.piledView.collapsedContentHeightInPercent = 15 // collapsed content heigt of single item -> 15% of screen
+
+```
 
 
 ### Known Issues

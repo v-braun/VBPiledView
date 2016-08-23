@@ -15,6 +15,8 @@ class ViewController: UIViewController, VBPiledViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.piledView.expandedContentHeightInPercent = 70 // expanded content height -> 70% of screen
+        self.piledView.collapsedContentHeightInPercent = 15 // collapsed content heigt of single item -> 15% of screen
         
         _subViews.append(UIImageView(image: UIImage(named: "ant.jpg")))
         _subViews.append(UIImageView(image: UIImage(named: "bigban.jpg")))

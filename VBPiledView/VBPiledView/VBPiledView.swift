@@ -50,12 +50,15 @@ public class VBPiledView: UIView, UIScrollViewDelegate {
         self.addSubview(_scrollview)
     }
     
+    public var expandedContentHeightInPercent : Float = 80
+    public var collapsedContentHeightInPercent : Float = 5
+    
     private func layoutContent(){
         guard let data = dataSource else {return}
         
         let currentScrollPoint = CGPoint(x:0, y: _scrollview.contentOffset.y)
-        let contentMinHeight = CGFloat(80)
-        let contentMaxHeight = CGFloat((_scrollview.bounds.height / 4) * 3)
+        let contentMinHeight = (CGFloat(collapsedContentHeightInPercent) * _scrollview.bounds.height) / 100
+        let contentMaxHeight = (CGFloat(expandedContentHeightInPercent) * _scrollview.bounds.height) / 100
         
         var lastElementH = CGFloat(0)
         var lastElementY = currentScrollPoint.y
