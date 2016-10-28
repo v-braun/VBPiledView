@@ -17,87 +17,87 @@ class ImgWithTextViewController: UIViewController, VBPiledViewDataSource {
         
         let img = UIImageView(image: UIImage(named: imgName))
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = UIViewContentMode.ScaleAspectFill
+        img.contentMode = UIViewContentMode.scaleAspectFill
         img.clipsToBounds = true
-        img.backgroundColor = UIColor.grayColor()
+        img.backgroundColor = UIColor.gray
         
         let v = UIView()
         v.addSubview(img)
         v.addConstraint(NSLayoutConstraint(
             item: img,
-            attribute: NSLayoutAttribute.CenterX,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.centerX,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.CenterX,
+            attribute: NSLayoutAttribute.centerX,
             multiplier: 1.0,
             constant: 0.0))
         
         v.addConstraint(NSLayoutConstraint(
             item: img,
-            attribute: NSLayoutAttribute.CenterY,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.centerY,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.CenterY,
+            attribute: NSLayoutAttribute.centerY,
             multiplier: 1.0,
             constant: 0.0))
         
         v.addConstraint(NSLayoutConstraint(
             item: img,
-            attribute: NSLayoutAttribute.Width,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.width,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.Width,
+            attribute: NSLayoutAttribute.width,
             multiplier: 1.0,
             constant: 0.0))
         v.addConstraint(NSLayoutConstraint(
             item: img,
-            attribute: NSLayoutAttribute.Height,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.height,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.Height,
+            attribute: NSLayoutAttribute.height,
             multiplier: 1.0,
             constant: 0.0))
         
         let lbl = UILabel()
         lbl.text = lblTitle
-        lbl.textAlignment = NSTextAlignment.Center
-        lbl.textColor = UIColor.whiteColor()
-        lbl.font = UIFont.systemFontOfSize(40)
+        lbl.textAlignment = NSTextAlignment.center
+        lbl.textColor = UIColor.white
+        lbl.font = UIFont.systemFont(ofSize: 40)
         
         lbl.translatesAutoresizingMaskIntoConstraints = false
         v.addSubview(lbl)
         v.addConstraint(NSLayoutConstraint(
             item: lbl,
-            attribute: NSLayoutAttribute.CenterX,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.centerX,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.CenterX,
+            attribute: NSLayoutAttribute.centerX,
             multiplier: 1.0,
             constant: 0.0))
         
         v.addConstraint(NSLayoutConstraint(
             item: lbl,
-            attribute: NSLayoutAttribute.CenterY,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.centerY,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.CenterY,
+            attribute: NSLayoutAttribute.centerY,
             multiplier: 1.0,
             constant: 0.0))
         
         v.addConstraint(NSLayoutConstraint(
             item: lbl,
-            attribute: NSLayoutAttribute.Width,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.width,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.Width,
+            attribute: NSLayoutAttribute.width,
             multiplier: 1.0,
             constant: 0.0))
         v.addConstraint(NSLayoutConstraint(
             item: lbl,
-            attribute: NSLayoutAttribute.Height,
-            relatedBy: NSLayoutRelation.Equal,
+            attribute: NSLayoutAttribute.height,
+            relatedBy: NSLayoutRelation.equal,
             toItem: v,
-            attribute: NSLayoutAttribute.Height,
+            attribute: NSLayoutAttribute.height,
             multiplier: 1.0,
             constant: 0.0))
         
@@ -127,11 +127,11 @@ class ImgWithTextViewController: UIViewController, VBPiledViewDataSource {
         piledView.dataSource = self
     }
     
-    func piledView(numberOfItemsForPiledView: VBPiledView) -> Int {
+    func piledView(_ numberOfItemsForPiledView: VBPiledView) -> Int {
         return _subViews.count
     }
     
-    func piledView(viewForPiledView: VBPiledView, itemAtIndex index: Int) -> UIView {
+    func piledView(_ viewForPiledView: VBPiledView, itemAtIndex index: Int) -> UIView {
         return _subViews[index]
     }
 }

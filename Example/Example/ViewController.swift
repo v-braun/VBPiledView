@@ -26,19 +26,19 @@ class ViewController: UIViewController, VBPiledViewDataSource {
         _subViews.append(UIImageView(image: UIImage(named: "photographer.jpg")))
         
         for v in _subViews{
-            v.contentMode = UIViewContentMode.ScaleAspectFill
+            v.contentMode = UIViewContentMode.scaleAspectFill
             v.clipsToBounds = true
-            v.backgroundColor = UIColor.grayColor()
+            v.backgroundColor = UIColor.gray
         }
         
         piledView.dataSource = self
     }
     
-    func piledView(numberOfItemsForPiledView: VBPiledView) -> Int {
+    func piledView(_ numberOfItemsForPiledView: VBPiledView) -> Int {
         return _subViews.count
     }
     
-    func piledView(viewForPiledView: VBPiledView, itemAtIndex index: Int) -> UIView {
+    func piledView(_ viewForPiledView: VBPiledView, itemAtIndex index: Int) -> UIView {
         return _subViews[index]
     }
 }
