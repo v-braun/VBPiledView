@@ -3,6 +3,8 @@
 
 By [v-braun - www.dev-things.net](http://www.dev-things.net).
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/VBPiledView.svg)](https://cocoapods.org/pods/VBPiledView)
+
 ## Preview
 ![image](screen.gif)
 
