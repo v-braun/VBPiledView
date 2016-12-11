@@ -4,6 +4,7 @@
 By [v-braun - www.dev-things.net](http://www.dev-things.net).
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/VBPiledView.svg)](https://cocoapods.org/pods/VBPiledView)
+[![CocoaPods](https://www.bitrise.io/app/33abbc30e64c5e0a.svg?token=uwKFmV6GUWq_Rknr4LBQfg&branch=master)](https://www.bitrise.io/app/33abbc30e64c5e0a.svg)
 
 ## Preview
 ![image](screen.gif)
