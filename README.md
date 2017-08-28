@@ -1,7 +1,7 @@
 # VBPiledView
 > simple but highly effective animation and interactivity!
 
-By [v-braun - www.dev-things.net](http://www.dev-things.net).
+By [v-braun - viktor-braun.de](https://viktor-braun.de).
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/VBPiledView.svg)](https://cocoapods.org/pods/VBPiledView)
 
