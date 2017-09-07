@@ -28,7 +28,7 @@ pod 'VBPiledView', '~> 1.0'
 Or from GitHub:
 
 ```ruby
-pod 'VBPiledView', :git => 'https://github.com/v-braun/VBPiledView.git'
+pod 'VBPiledView', :git => 'https://github.com/macah1/VBPiledView.git'
 ```
 
 ### Manually

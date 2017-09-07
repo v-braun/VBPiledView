@@ -8,14 +8,14 @@
 
 
 public protocol VBPiledViewDataSource{
-    func piledView(numberOfItemsForPiledView: VBPiledView) -> Int
-    func piledView(viewForPiledView: VBPiledView, itemAtIndex index: Int) -> UIView
+    func piledView(_ numberOfItemsForPiledView: VBPiledView) -> Int
+    func piledView(_ viewForPiledView: VBPiledView, itemAtIndex index: Int) -> UIView
 }
 
-public class VBPiledView: UIView, UIScrollViewDelegate {
+open class VBPiledView: UIView, UIScrollViewDelegate {
     
-    private let _scrollview = UIScrollView()
-    public var dataSource : VBPiledViewDataSource?
+    fileprivate let _scrollview = UIScrollView()
+    open var dataSource : VBPiledViewDataSource?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +29,7 @@ public class VBPiledView: UIView, UIScrollViewDelegate {
         initInternal();
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         _scrollview.frame = self.bounds
         
         self.layoutContent()
@@ -37,23 +37,23 @@ public class VBPiledView: UIView, UIScrollViewDelegate {
         super.layoutSubviews()
     }
     
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         layoutContent()
     }
     
-    private func initInternal(){
+    fileprivate func initInternal(){
         _scrollview.showsVerticalScrollIndicator = true
         _scrollview.showsHorizontalScrollIndicator = false
-        _scrollview.scrollEnabled = true
+        _scrollview.isScrollEnabled = true
         _scrollview.delegate = self
         
         self.addSubview(_scrollview)
     }
     
-    public var expandedContentHeightInPercent : Float = 80
-    public var collapsedContentHeightInPercent : Float = 5
+    open var expandedContentHeightInPercent : Float = 80
+    open var collapsedContentHeightInPercent : Float = 5
     
-    private func layoutContent(){
+    fileprivate func layoutContent(){
         guard let data = dataSource else {return}
         
         let currentScrollPoint = CGPoint(x:0, y: _scrollview.contentOffset.y)
@@ -67,7 +67,7 @@ public class VBPiledView: UIView, UIScrollViewDelegate {
         _scrollview.contentSize = CGSize(width: self.bounds.width, height: _scrollview.bounds.height * CGFloat(subViewNumber))
         for index in 0..<subViewNumber {
             let v = data.piledView(self, itemAtIndex: index)
-            if !v.isDescendantOfView(_scrollview){
+            if !v.isDescendant(of: _scrollview){
                 _scrollview.addSubview(v)
             }
             
@@ -83,13 +83,13 @@ public class VBPiledView: UIView, UIScrollViewDelegate {
                     h = h + (currentScrollPoint.y - CGFloat(index) * _scrollview.bounds.size.height)
                 }
             }
-            else if CGRectContainsPoint(slidingWindow, currentViewUntransformedLocation){
+            else if slidingWindow.contains(currentViewUntransformedLocation){
                 let relativeScrollPos = currentScrollPoint.y - (CGFloat(index) * _scrollview.bounds.size.height)
                 let scaleFactor = (relativeScrollPos * 100) / _scrollview.bounds.size.height
                 let diff = (scaleFactor * contentMaxHeight) / 100
                 h = contentMaxHeight - diff
             }
-            else if CGRectContainsPoint(slidingWindow, prevViewUntransformedLocation){
+            else if slidingWindow.contains(prevViewUntransformedLocation){
                 h = contentMaxHeight - lastElementH
                 if currentScrollPoint.y < 0 {
                     h = h + abs(currentScrollPoint.y)
