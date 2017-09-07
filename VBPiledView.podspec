@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VBPiledView"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "Simple and beautiful stacked UIView to use as a replacement for an UITableView, UIImageView or as a menu."
 
   s.description  = <<-DESC
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/v_braun"
 
   s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "10.3"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
