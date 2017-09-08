@@ -11,7 +11,7 @@ class ViewController: UIViewController, VBPiledViewDataSource {
 
     @IBOutlet var piledView: VBPiledView!
     
-    private var _subViews = [UIView]()
+    fileprivate var _subViews = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

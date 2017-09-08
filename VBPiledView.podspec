@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VBPiledView"
-  s.version      = "1.2"
+  s.version      = "1.3"
   s.summary      = "Simple and beautiful stacked UIView to use as a replacement for an UITableView, UIImageView or as a menu."
 
   s.description  = <<-DESC
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/v_braun"
 
   s.platform     = :ios
-  s.platform     = :ios, "10.3"
+  s.platform     = :ios, "10.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -47,5 +47,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
   s.source_files  = "VBPiledView/VBPiledView/*.swift"
+
+
 
 end
