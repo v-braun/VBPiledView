@@ -22,7 +22,7 @@ Inspired by [this](http://theultralinx.com/2015/10/inspirational-ui-design-15/) 
 VBPiledView is available on [CocoaPods](http://cocoapods.org). Just add the following to your project Podfile:
 
 ```ruby
-pod 'VBPiledView', '~> 1.3'
+pod 'VBPiledView', '~> 1.4'
 ```
 
 Or from GitHub:

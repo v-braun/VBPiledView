@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VBPiledView"
-  s.version      = "1.3"
+  s.version      = "1.4"
   s.summary      = "Simple and beautiful stacked UIView to use as a replacement for an UITableView, UIImageView or as a menu."
 
   s.description  = <<-DESC
