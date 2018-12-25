@@ -87,8 +87,11 @@ self.piledView.collapsedContentHeightInPercent = 15 // collapsed content heigt o
 
 ```
 
+## Related Projects
+- [Cocoa Rocks](https://cocoa.rocks/): this and other awesome Cocoa Controls
+- [awesome-cocoa](https://github.com/v-braun/awesome-cocoa): an awesome list of cocoa controls
 
-### Known Issues
+## Known Issues
 
 If you discover any bugs, feel free to create an issue on GitHub fork and
 send me a pull request.
